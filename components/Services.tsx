@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion'
 import { Search, Settings, RefreshCw, BarChart3, Target } from 'lucide-react'
 
 const services = [
@@ -37,14 +39,35 @@ export default function Services() {
   return (
     <section id="services" className="services">
       <div className="container">
-        <h2 className="section-title">Turn your GTM data into revenue</h2>
-        <p className="section-subtitle">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="section-title"
+        >
+          Turn your GTM data into revenue
+        </motion.h2>
+        
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="section-subtitle"
+        >
           From cleaning up the backend to running the outbound frontend. We build the engine and can even drive it for you.
-        </p>
+        </motion.p>
 
         <div className="service-grid">
-          {services.map((service) => (
-            <div key={service.title} className="service-card">
+          {services.map((service, index) => (
+            <motion.div 
+              key={service.title} 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="service-card"
+            >
               <div className="service-icon">
                 <service.icon size={24} />
               </div>
@@ -55,7 +78,7 @@ export default function Services() {
                 </h3>
                 <p>{service.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
