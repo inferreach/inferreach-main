@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 
 export default function WhatYouGet() {
@@ -23,6 +25,7 @@ export default function WhatYouGet() {
         >
           What you actually get
         </motion.h2>
+        
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
