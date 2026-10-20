@@ -35,6 +35,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  
+  // EXPLICIT FAVICON CONFIGURATION (Fixes Google Search Icon)
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
+
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -44,7 +55,7 @@ export const metadata: Metadata = {
     siteName: 'InferReach',
     images: [
       {
-        url: '/og-image.png', // YOU MUST ADD THIS IMAGE TO YOUR /public FOLDER
+        url: '/og-image.png', // MAKE SURE THIS IMAGE EXISTS IN YOUR /public FOLDER
         width: 1200,
         height: 630,
         alt: 'InferReach - GTM Data Engineering',
@@ -55,7 +66,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'InferReach | GTM Data Engineering',
     description: 'We clean up your CRM data and can replace your SDR/BDR team.',
-    images: ['/og-image.png'], // YOU MUST ADD THIS IMAGE TO YOUR /public FOLDER
+    images: ['/og-image.png'], // MAKE SURE THIS IMAGE EXISTS IN YOUR /public FOLDER
   },
   robots: {
     index: true,
@@ -97,7 +108,7 @@ const jsonLd = {
       url: baseUrl,
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}/icon.svg`,
+        url: `${baseUrl}/icon.png`,
       },
       contactPoint: {
         '@type': 'ContactPoint',
