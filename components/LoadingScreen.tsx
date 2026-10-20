@@ -17,15 +17,9 @@ export default function LoadingScreen() {
   const [hidden, setHidden] = useState(false)
 
   useEffect(() => {
-    // Only show once per browser session
-    if (sessionStorage.getItem('inferreach_loaded') === 'true') {
-      setHidden(true)
-      return
-    }
-
-    // Progress bar animation (1.8s)
+    // Progress bar animation (1.5s)
     const start = performance.now()
-    const duration = 1800
+    const duration = 1500
 
     const tick = (now: number) => {
       const t = Math.min((now - start) / duration, 1)
@@ -36,18 +30,14 @@ export default function LoadingScreen() {
         requestAnimationFrame(tick)
       } else {
         setTimeout(() => setFading(true), 200)
-        setTimeout(() => {
-          setHidden(true)
-          sessionStorage.setItem('inferreach_loaded', 'true')
-        }, 900)
+        setTimeout(() => setHidden(true), 800)
       }
     }
     requestAnimationFrame(tick)
 
-    // Cycle status messages every 500ms
     const statusInterval = setInterval(() => {
       setStatusIndex((i) => (i + 1) % STATUS_MESSAGES.length)
-    }, 500)
+    }, 400)
 
     return () => clearInterval(statusInterval)
   }, [])
@@ -65,7 +55,7 @@ export default function LoadingScreen() {
           <div className="loading-bar" style={{ width: `${progress}%` }} />
         </div>
         <div className="loading-meta">
-          <span className="loading-status">{STATUS_MESSAGES[statusIndex]}</span>
+          <span>{STATUS_MESSAGES[statusIndex]}</span>
           <span className="loading-percent">{progress}%</span>
         </div>
       </div>

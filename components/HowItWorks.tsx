@@ -1,24 +1,27 @@
 export default function HowItWorks() {
+  const steps = [
+    { title: '1. Fix the Data', desc: 'We audit and clean your CRM, removing duplicates and enriching missing fields.' },
+    { title: '2. Define the ICP', desc: 'We build a highly targeted list of your ideal buyers using custom Clay engines.' },
+    { title: '3. Execute Outbound', desc: 'We set up the domains, warm them up, and launch hyper-personalized campaigns.' },
+    { title: '4. Book Meetings', desc: 'We handle replies and objections, booking qualified demos directly on your calendar.' },
+  ]
+
   return (
-    <section id="how-it-works" className="how-it-works">
+    <section id="process" className="how-it-works">
       <div className="container">
-        <h2 className="section-title">How It Works</h2>
+        <h2 className="section-title">From messy CRM to booked meetings</h2>
+        <p className="section-subtitle">
+          Whether you just want the data cleaned up or want us to run the whole outbound engine.
+        </p>
+
         <div className="steps">
-          <div className="step">
-            <div className="step-number">1</div>
-            <h4>Free Data Audit</h4>
-            <p>We analyze your CRM, pipeline, and tech stack to find leaks and opportunities.</p>
-          </div>
-          <div className="step">
-            <div className="step-number">2</div>
-            <h4>Custom Proposal</h4>
-            <p>We deliver a report with 5‑10 actionable fixes and a clear implementation plan.</p>
-          </div>
-          <div className="step">
-            <div className="step-number">3</div>
-            <h4>Implementation</h4>
-            <p>We clean, build, and automate – and train your team to maintain it.</p>
-          </div>
+          {steps.map((step) => (
+            <div key={step.title} className="step">
+              <div className="step-number">{step.title.charAt(0)}</div>
+              <h4>{step.title.slice(3)}</h4>
+              <p>{step.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

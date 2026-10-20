@@ -6,13 +6,23 @@ export default function Footer() {
     <footer>
       <div className="container footer-inner">
         <div className="footer-brand">
-          <Logo size={28} />
-          <span>&copy; 2026 InferReach. Built for revenue teams.</span>
+          <Logo size={20} />
+          <span>© {new Date().getFullYear()} InferReach. All rights reserved.</span>
         </div>
+        
         <div className="footer-links">
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
-          <a href="mailto:hello@inferreach.com">hello@inferreach.com</a>
+          <a href="https://linkedin.com/company/inferreach" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="mailto:hello@inferreach.com">
+            Email Us
+          </a>
+          <Link href="/privacy">
+            Privacy
+          </Link>
+          <Link href="/terms">
+            Terms
+          </Link>
         </div>
       </div>
     </footer>
