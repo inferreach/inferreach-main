@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static' // <-- Add this
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://inferreach.com'
   
