@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 
-export const dynamic = 'force-static' // <-- Add this
+// This forces Next.js to pre-render the sitemap at build time
+export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://inferreach.com'
