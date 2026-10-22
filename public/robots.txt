@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inferreach.com/sitemap.xml
