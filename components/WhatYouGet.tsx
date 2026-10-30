@@ -1,17 +1,16 @@
 'use client'
-
 import { motion } from 'framer-motion'
 
 export default function WhatYouGet() {
   const deliverables = [
-    'Full CRM data quality audit (duplicates, gaps, stale records)',
-    'Enrichment gap analysis with provider recommendations',
-    'Tool integration map (Salesforce ↔ marketing ↔ sales engagement)',
-    'Interviews with 2–3 of your sales reps',
-    '10-page written report with 5–10 specific fixes',
-    'Prioritized roadmap with effort + impact estimates',
-    'Live walkthrough call to review findings',
-    '30-day follow-up check-in'
+    '500 to 1,000 verified leads per sprint',
+    'Company Name, Website, and LinkedIn URLs',
+    'Decision-Maker Name, Title, and Verified Email',
+    'CRM deduplication and field governance',
+    'Clay waterfall enrichment setup',
+    'Outbound automation workflows',
+    'Custom reporting dashboards for your reps',
+    'Multi-channel sequence building & management',
   ]
 
   return (
@@ -33,7 +32,7 @@ export default function WhatYouGet() {
           transition={{ delay: 0.1 }}
           className="section-subtitle"
         >
-          Every GTM Data Health Check includes these deliverables — no surprises.
+          Depending on the scope of your project, here are the assets and data infrastructure we deliver.
         </motion.p>
 
         <div className="deliverables-grid">
