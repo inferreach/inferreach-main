@@ -1,26 +1,50 @@
+'use client'
+import { motion } from 'framer-motion'
+
 export default function HowItWorks() {
   const steps = [
-    { title: '1. Fix the Data', desc: 'We audit and clean your CRM, removing duplicates and enriching missing fields.' },
-    { title: '2. Define the ICP', desc: 'We build a highly targeted list of your ideal buyers using custom Clay engines.' },
-    { title: '3. Execute Outbound', desc: 'We set up the domains, warm them up, and launch hyper-personalized campaigns.' },
-    { title: '4. Book Meetings', desc: 'We handle replies and objections, booking qualified demos directly on your calendar.' },
+    { title: '1. Discovery & Scope', desc: 'We figure out if you need a Lead Gen Sprint, an SDR Pod, or Data Engineering.' },
+    { title: '2. Data & Access', desc: 'You provide access to your CRM (HubSpot/Salesforce) and we establish email infrastructure.' },
+    { title: '3. Execution', desc: 'We build lists, clean the CRM, set up Clay enrichment, and launch sequences.' },
+    { title: '4. Booked Meetings', desc: 'We manage the replies and book qualified demos directly onto your AEs calendars.' },
   ]
 
   return (
     <section id="process" className="how-it-works">
       <div className="container">
-        <h2 className="section-title">From messy CRM to booked meetings</h2>
-        <p className="section-subtitle">
-          Whether you just want the data cleaned up or want us to run the whole outbound engine.
-        </p>
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="section-title"
+        >
+          How we work together
+        </motion.h2>
+        
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="section-subtitle"
+        >
+          A streamlined process that goes from messy data to booked meetings.
+        </motion.p>
 
         <div className="steps">
-          {steps.map((step) => (
-            <div key={step.title} className="step">
-              <div className="step-number">{step.title.charAt(0)}</div>
+          {steps.map((step, index) => (
+            <motion.div 
+              key={step.title} 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="step"
+            >
+              <div className="step-number">{index + 1}</div>
               <h4>{step.title.slice(3)}</h4>
               <p>{step.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
