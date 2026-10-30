@@ -999,3 +999,43 @@ footer {
   transform: translateY(-2px);
   background: rgba(255, 180, 84, 0.05);
 }
+
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #10161b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 600px;
+}
+.cookie-banner p {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  margin: 0;
+}
+.cookie-banner a {
+  color: #ffb454;
+  text-decoration: underline;
+}
+.cookie-btn {
+  background: #ffb454;
+  color: #1a1305;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .cookie-banner { flex-direction: column; text-align: center; gap: 12px; }
+}
