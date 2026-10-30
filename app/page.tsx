@@ -5,12 +5,12 @@ import Results from '@/components/Results'
 import Services from '@/components/Services'
 import WhatYouGet from '@/components/WhatYouGet'
 import HowItWorks from '@/components/HowItWorks'
-import Tools from '@/components/Tools'
 import WhoThisIsFor from '@/components/WhoThisIsFor'
-import Guarantee from '@/components/Guarantee'
+
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import CookieBanner from '@/components/CookieBanner'
 
 export default function Home() {
   return (
@@ -18,21 +18,21 @@ export default function Home() {
       <LoadingScreen />
       <Header />
       
-      {/* Main content area for search engines */}
       <main>
         <Hero />
         <Results />
         <Services />
         <WhatYouGet />
         <HowItWorks />
-        <Tools />
+        {/* <Tools /> is removed from here */}
         <WhoThisIsFor />
-        <Guarantee />
+        
         <FAQ />
         <Contact />
       </main>
       
       <Footer />
+      <CookieBanner />
     </>
   )
 }
