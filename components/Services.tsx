@@ -1,37 +1,25 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Search, Settings, RefreshCw, BarChart3, Target } from 'lucide-react'
+import { Target, Send, Database } from 'lucide-react'
 
 const services = [
   {
-    icon: Search,
-    title: 'GTM Data Health Check',
-    description: 'A 5-day deep dive into your Salesforce/HubSpot. We find the duplicates, missing fields, and sync errors silently killing your pipeline.',
-    badge: 'fixed',
-  },
-  {
-    icon: Settings,
-    title: 'Revenue Systems Implementation',
-    description: 'We do the dirty work: deduping the CRM, enriching missing accounts, and setting up automated outbound workflows in Clay or Apollo.',
-    badge: 'one-time',
-  },
-  {
     icon: Target,
-    title: 'Outsourced SDR / BDR Engine',
-    description: 'Skip the $70k hire. We source the leads, write the sequences, manage the outbound tools, and book qualified meetings directly on your calendar.',
-    badge: 'monthly',
+    title: 'Lead Generation Sprint',
+    description: 'A fixed-scope, 1-week project to build a highly targeted prospect list. We deliver 500 to 1,000 verified leads based on your specific ICP, geography, and tech stack signals.',
+    badge: 'Testing a new market',
   },
   {
-    icon: RefreshCw,
-    title: 'GTM Data Retainer',
-    description: 'Ongoing hygiene for scaling sales teams. We monitor pipeline health, fix routing errors, and update lead scoring models.',
-    badge: 'monthly',
+    icon: Send,
+    title: 'Outsourced SDR / BDR Pod',
+    description: 'A managed outbound service to book meetings for your Account Executives while you search for full-time hires. We handle ICP refinement, list building, multi-channel sequences, and campaign management.',
+    badge: 'Immediate pipeline',
   },
   {
-    icon: BarChart3,
-    title: 'Custom Clay Engine',
-    description: 'Build a custom lead-scoring and enrichment engine in Clay to find your exact ICP, so your AEs only talk to qualified buyers.',
-    badge: 'one-time',
+    icon: Database,
+    title: 'GTM Data Engineering',
+    description: 'Cleaning up your CRM, automating enrichment with Clay, and building reporting dashboards so your reps trust the data. We handle the deduplication, governance, and workflows.',
+    badge: 'Scaling teams',
   },
 ]
 
@@ -45,7 +33,7 @@ export default function Services() {
           viewport={{ once: true }}
           className="section-title"
         >
-          Turn your GTM data into revenue
+          Our Core Offers
         </motion.h2>
         
         <motion.p 
@@ -55,7 +43,7 @@ export default function Services() {
           transition={{ delay: 0.1 }}
           className="section-subtitle"
         >
-          From cleaning up the backend to running the outbound frontend. We build the engine and can even drive it for you.
+          From testing a new market to scaling your outbound engine, we build the data infrastructure that drives revenue.
         </motion.p>
 
         <div className="service-grid">
