@@ -12,7 +12,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="badge"
           >
-            GTM Data Engineering for B2B SaaS
+            Zero-Bounce Outreach & GTM Infrastructure
           </motion.span>
           
           <motion.h1
@@ -20,7 +20,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Stop letting messy CRM data kill your Series A pipeline.
+            Managed Outbound Pods & GTM Data Engineering for B2B SaaS.
           </motion.h1>
           
           <motion.p
@@ -28,7 +28,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Built for Seed to Series A SaaS teams (10–100 employees). We clean up your Salesforce/HubSpot, automate your outbound, and can even <strong>replace your SDR/BDR team</strong> to book meetings for you.
+            We build custom data pipelines, automate email verification waterfalls, and execute high-touch outbound so your sales team only talks to qualified prospects.
           </motion.p>
           
           <motion.div 
@@ -60,9 +60,9 @@ export default function Hero() {
             <div className="dashboard-header">
               <div className="dashboard-live">
                 <span className="live-pulse"></span>
-                Live Engine
+                Deliverability Protected
               </div>
-              <span className="dashboard-growth">+24.7%</span>
+              <span className="dashboard-growth">0% Bounce</span>
             </div>
             <div className="dashboard-metrics">
               <div className="dash-metric">
@@ -74,7 +74,6 @@ export default function Hero() {
                 <div className="dash-value">8,921</div>
               </div>
             </div>
-            {/* Fixed Bar Chart using inline styles */}
             <div className="chart-bars">
               {[40, 70, 45, 90, 65, 85, 100].map((height, i) => (
                 <div key={i} className="bar-wrap">
