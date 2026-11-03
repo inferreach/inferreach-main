@@ -12,7 +12,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="badge"
           >
-            Zero-Bounce Outreach & GTM Infrastructure
+            Managed Outbound & GTM Infrastructure
           </motion.span>
           
           <motion.h1
@@ -20,7 +20,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Managed Outbound Pods & GTM Data Engineering for B2B SaaS.
+            Managed Outbound Pods & <br className="hidden md:block" />
+            GTM Data Engineering <br className="hidden md:block" />
+            for B2B SaaS.
           </motion.h1>
           
           <motion.p
@@ -62,7 +64,7 @@ export default function Hero() {
                 <span className="live-pulse"></span>
                 Deliverability Protected
               </div>
-              <span className="dashboard-growth">0% Bounce</span>
+              <span className="dashboard-growth">+2x Reply Rate</span>
             </div>
             <div className="dashboard-metrics">
               <div className="dash-metric">

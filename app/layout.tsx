@@ -7,18 +7,14 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-body', display: 'swa
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-display', display: 'swap' })
 const ibmPlexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' })
 
-// 1. THE DOMAIN BASE (Critical for OpenGraph images and Canonical URLs)
-const baseUrl = 'https://inferreach.com'
-
-// 2. COMPREHENSIVE SEO METADATA
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL('https://inferreach.com'),
   title: {
-    default: 'InferReach | GTM Data Engineering for B2B SaaS',
+    default: 'InferReach | Managed Outbound Pods & GTM Data Engineering',
     template: '%s | InferReach',
   },
-  description: 'We turn messy CRM data into a clean, automated revenue engine. GTM Data Engineering for Seed to Series A B2B SaaS teams. Outsource your SDR/BDR and clean your Salesforce/HubSpot.',
-    keywords: [
+  description: 'We build custom data pipelines, automate email verification waterfalls, and execute high-touch outbound so your sales team only talks to qualified prospects.',
+  keywords: [
     'Managed Outbound Pods',
     'GTM Data Engineering',
     'B2B SaaS',
@@ -26,9 +22,8 @@ export const metadata: Metadata = {
     'Pipeline Generation',
     'Data Waterfall',
     'Deliverability Protection',
-    'Zero-Bounce Outreach',
-    'Clay Enrichment',
-    'Salesforce Data Cleanup'
+    'CRM Cleanup',
+    'Salesforce Enrichment'
   ],
   authors: [{ name: 'Prajwol Raj Giri', url: 'https://inferreach.com' }],
   creator: 'InferReach',
@@ -36,38 +31,36 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  
-  // EXPLICIT FAVICON CONFIGURATION (Fixes Google Search Icon)
   icons: {
     icon: [
+      { url: '/favicon.ico' },
       { url: '/icon.svg', type: 'image/svg+xml' },
       { url: '/icon.png', type: 'image/png' },
     ],
-    shortcut: '/icon.png',
+    shortcut: '/favicon.ico',
     apple: '/icon.png',
   },
-
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: baseUrl,
-    title: 'InferReach | GTM Data Engineering',
-    description: 'Stop letting messy CRM data kill your Series A pipeline. We clean up your data and can replace your SDR/BDR team.',
+    url: 'https://inferreach.com',
+    title: 'InferReach | Managed Outbound & Data Engineering',
+    description: 'Stop letting messy CRM data and deliverability issues kill your pipeline. We build the data infrastructure and run the outbound for you.',
     siteName: 'InferReach',
     images: [
       {
-        url: '/og-image.png', // MAKE SURE THIS IMAGE EXISTS IN YOUR /public FOLDER
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'InferReach - GTM Data Engineering',
+        alt: 'InferReach - Managed Outbound Pods',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'InferReach | GTM Data Engineering',
-    description: 'We clean up your CRM data and can replace your SDR/BDR team.',
-    images: ['/og-image.png'], // MAKE SURE THIS IMAGE EXISTS IN YOUR /public FOLDER
+    title: 'InferReach | Managed Outbound & Data Engineering',
+    description: 'Custom data pipelines and managed outbound for B2B SaaS. We book meetings directly on your AEs calendars.',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -82,7 +75,6 @@ export const metadata: Metadata = {
   },
 }
 
-// 3. VIEWPORT (Prevents mobile layout shifts)
 export const viewport: Viewport = {
   themeColor: '#050505',
   width: 'device-width',
@@ -90,26 +82,25 @@ export const viewport: Viewport = {
   maximumScale: 5,
 }
 
-// 4. STRUCTURED DATA (JSON-LD) FOR RICH RESULTS
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'WebSite',
-      '@id': `${baseUrl}/#website`,
-      url: baseUrl,
+      '@id': `https://inferreach.com/#website`,
+      url: 'https://inferreach.com',
       name: 'InferReach',
-      description: 'GTM Data Engineering for B2B SaaS',
-      publisher: { '@id': `${baseUrl}/#organization` },
+      description: 'Managed Outbound Pods & GTM Data Engineering for B2B SaaS',
+      publisher: { '@id': `https://inferreach.com/#organization` },
     },
     {
       '@type': 'Organization',
-      '@id': `${baseUrl}/#organization`,
+      '@id': `https://inferreach.com/#organization`,
       name: 'InferReach',
-      url: baseUrl,
+      url: 'https://inferreach.com',
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}/icon.png`,
+        url: `https://inferreach.com/icon.png`,
       },
       contactPoint: {
         '@type': 'ContactPoint',

@@ -6,13 +6,13 @@ const services = [
   {
     icon: Database,
     title: 'GTM Data Engineering',
-    description: 'Cleaning up your CRM and automating data waterfalls with Clay. We build the verification infrastructure to guarantee 0% bounce rates and total deliverability protection.',
+    description: 'Cleaning up your CRM and automating data waterfalls with Clay. We build the verification infrastructure to drastically reduce bounce rates and protect your domain reputation.',
     badge: 'Scaling teams',
   },
   {
     icon: Send,
     title: 'Outsourced SDR / BDR Pod',
-    description: 'A managed outbound service to book meetings for your Account Executives. We use your clean data to run zero-bounce, high-touch outreach and pipeline generation.',
+    description: 'A managed outbound service to book meetings for your Account Executives. We use your clean data to run high-touch, highly targeted outreach and pipeline generation.',
     badge: 'Immediate pipeline',
   },
   {

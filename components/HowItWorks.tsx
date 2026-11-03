@@ -9,11 +9,11 @@ export default function HowItWorks() {
     },
     { 
       title: '2. Data Waterfall', 
-      desc: 'We build custom Clay/Apollo waterfall enrichments to find verified emails and ensure 0% bounce rates.' 
+      desc: 'We build custom Clay/Apollo waterfall enrichments to find verified emails and maximize inbox placement.' 
     },
     { 
       title: '3. Managed Outbound', 
-      desc: 'We act as your outsourced SDR team, launching high-touch, zero-bounce outreach sequences.' 
+      desc: 'We act as your outsourced SDR team, launching high-touch, highly personalized outreach sequences.' 
     },
     { 
       title: '4. Pipeline Generation', 
