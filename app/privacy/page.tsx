@@ -9,20 +9,20 @@ export default function Privacy() {
     <main className="legal-page">
       <div className="container legal-container">
         <Link href="/" className="legal-back">← Back to home</Link>
+        
         <h1 className="legal-title">Privacy Policy</h1>
-        <p className="legal-updated">Last updated: October 29, 2026</p>
+        <p className="legal-updated">Last updated: November 3, 2026</p>
 
         <div className="legal-body">
           <p>
-            InferReach ("we", "us", "our") respects your privacy. This policy explains what
-            information we collect, how we use it, and the choices you have.
+            InferReach (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) respects your privacy. This policy explains what information we collect, how we use it, and the choices you have.
           </p>
 
           <h2>1. Information We Collect</h2>
           <p>We collect information in two ways:</p>
           <ul>
-            <li><strong>Directly from you:</strong> Your name, email address, and company name when you book a call via Cal.com or email us directly.</li>
-            <li><strong>Automatically:</strong> Basic, anonymized analytics data (IP address, browser type) via Cloudflare to ensure the site functions securely.</li>
+            <li><strong>Directly from you:</strong> Your name, email address, and company name when you book a call via Cal.com, fill out a form, or email us directly.</li>
+            <li><strong>Automatically:</strong> Basic, anonymized analytics data (IP address, browser type) via Cloudflare to ensure the site functions securely and to analyze traffic.</li>
           </ul>
 
           <h2>2. Cookies & Tracking (Cookie Policy)</h2>
@@ -32,17 +32,17 @@ export default function Privacy() {
 
           <h2>3. Data Deletion & Your Rights</h2>
           <p>
-            You have the right to access, correct, or request the permanent deletion of your personal data at any time. To request data deletion, please email us directly at <a href="mailto:hello@inferreach.com">hello@inferreach.com</a> and we will process your request within 7 business days.
+            You have the right to access, correct, or request the permanent deletion of your personal data at any time. To request data deletion, please email us directly at <a href="mailto:hello@inferreach.com" className="legal-link">hello@inferreach.com</a> and we will process your request within 7 business days.
           </p>
 
-          <h2>4. Children's Privacy (Age Consent)</h2>
+          <h2>4. Children&rsquo;s Privacy (Age Consent)</h2>
           <p>
             Our services are intended for B2B business use. We do not knowingly collect personal information from children under the age of 16. If you believe we have inadvertently collected such information, please contact us immediately so we can delete it.
           </p>
 
           <h2>5. Third-Party Services</h2>
           <p>
-            We use trusted third-party tools (Cal.com for scheduling, Cloudflare for hosting, Resend for email). These tools only receive the minimum data necessary to perform their functions.
+            We use trusted third-party tools (Cal.com for scheduling, Cloudflare for hosting, Resend for email, Clay/Apollo for data enrichment). These tools only receive the minimum data necessary to perform their functions.
           </p>
 
           <h2>6. Contact</h2>
