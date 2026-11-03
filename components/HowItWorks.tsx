@@ -3,10 +3,22 @@ import { motion } from 'framer-motion'
 
 export default function HowItWorks() {
   const steps = [
-    { title: '1. Discovery & Scope', desc: 'We figure out if you need a Lead Gen Sprint, an SDR Pod, or Data Engineering.' },
-    { title: '2. Data & Access', desc: 'You provide access to your CRM (HubSpot/Salesforce) and we establish email infrastructure.' },
-    { title: '3. Execution', desc: 'We build lists, clean the CRM, set up Clay enrichment, and launch sequences.' },
-    { title: '4. Booked Meetings', desc: 'We manage the replies and book qualified demos directly onto your AEs calendars.' },
+    { 
+      title: '1. Data Engineering', 
+      desc: 'We clean your CRM, deduplicate records, and fix field governance so your reps finally trust the data.' 
+    },
+    { 
+      title: '2. Data Waterfall', 
+      desc: 'We build custom Clay/Apollo waterfall enrichments to find verified emails and ensure 0% bounce rates.' 
+    },
+    { 
+      title: '3. Managed Outbound', 
+      desc: 'We act as your outsourced SDR team, launching high-touch, zero-bounce outreach sequences.' 
+    },
+    { 
+      title: '4. Pipeline Generation', 
+      desc: 'We handle the replies and book qualified meetings directly on your AEs\' calendars.' 
+    },
   ]
 
   return (
@@ -28,7 +40,7 @@ export default function HowItWorks() {
           transition={{ delay: 0.1 }}
           className="section-subtitle"
         >
-          A streamlined process that goes from messy data to booked meetings.
+          We solve the hardest part of outbound: data quality and email deliverability.
         </motion.p>
 
         <div className="steps">
