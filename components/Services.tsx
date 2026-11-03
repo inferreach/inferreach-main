@@ -4,22 +4,22 @@ import { Target, Send, Database } from 'lucide-react'
 
 const services = [
   {
-    icon: Target,
-    title: 'Lead Generation Sprint',
-    description: 'A fixed-scope, 1-week project to build a highly targeted prospect list. We deliver 500 to 1,000 verified leads based on your specific ICP, geography, and tech stack signals.',
-    badge: 'Testing a new market',
+    icon: Database,
+    title: 'GTM Data Engineering',
+    description: 'Cleaning up your CRM and automating data waterfalls with Clay. We build the verification infrastructure to guarantee 0% bounce rates and total deliverability protection.',
+    badge: 'Scaling teams',
   },
   {
     icon: Send,
     title: 'Outsourced SDR / BDR Pod',
-    description: 'A managed outbound service to book meetings for your Account Executives while you search for full-time hires. We handle ICP refinement, list building, multi-channel sequences, and campaign management.',
+    description: 'A managed outbound service to book meetings for your Account Executives. We use your clean data to run zero-bounce, high-touch outreach and pipeline generation.',
     badge: 'Immediate pipeline',
   },
   {
-    icon: Database,
-    title: 'GTM Data Engineering',
-    description: 'Cleaning up your CRM, automating enrichment with Clay, and building reporting dashboards so your reps trust the data. We handle the deduplication, governance, and workflows.',
-    badge: 'Scaling teams',
+    icon: Target,
+    title: 'Lead Generation Sprint',
+    description: 'A fixed-scope, 1-week project to build a highly targeted prospect list. We deliver 500 to 1,000 verified leads using custom data waterfalls based on your ICP.',
+    badge: 'Testing a market',
   },
 ]
 
@@ -43,7 +43,7 @@ export default function Services() {
           transition={{ delay: 0.1 }}
           className="section-subtitle"
         >
-          From testing a new market to scaling your outbound engine, we build the data infrastructure that drives revenue.
+          From data infrastructure to full-scale pipeline generation. We build the engine and drive it.
         </motion.p>
 
         <div className="service-grid">
