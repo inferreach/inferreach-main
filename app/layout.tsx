@@ -18,16 +18,17 @@ export const metadata: Metadata = {
     template: '%s | InferReach',
   },
   description: 'We turn messy CRM data into a clean, automated revenue engine. GTM Data Engineering for Seed to Series A B2B SaaS teams. Outsource your SDR/BDR and clean your Salesforce/HubSpot.',
-  keywords: [
+    keywords: [
+    'Managed Outbound Pods',
     'GTM Data Engineering',
     'B2B SaaS',
-    'CRM Data Cleanup',
-    'Salesforce Data Enrichment',
-    'HubSpot RevOps',
     'Outsourced SDR',
-    'Outsourced BDR',
-    'Revenue Operations',
-    'Data Pipeline for Startups'
+    'Pipeline Generation',
+    'Data Waterfall',
+    'Deliverability Protection',
+    'Zero-Bounce Outreach',
+    'Clay Enrichment',
+    'Salesforce Data Cleanup'
   ],
   authors: [{ name: 'Prajwol Raj Giri', url: 'https://inferreach.com' }],
   creator: 'InferReach',
