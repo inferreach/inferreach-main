@@ -16,14 +16,14 @@ export default function Header() {
           <a href="#services">Services</a>
           <a href="#process">How it works</a>
           <a href="#faq">FAQ</a>
-          <a href="https://cal.com/inferreach/30min" target="_blank" rel="noopener noreferrer" className="btn-outline">
+          <a href="https://calendly.com/hello-inferreach/30-minute-audit-call" target="_blank" rel="noopener noreferrer" className="btn-outline">
             Book a call
           </a>
         </nav>
 
         {/* Mobile CTA (Hidden on Desktop) */}
         <a 
-          href="https://cal.com/inferreach/30min" 
+          href="https://calendly.com/hello-inferreach/30-minute-audit-call" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-outline mobile-cta"

@@ -31,7 +31,7 @@ export default function Contact() {
           transition={{ delay: 0.2 }}
           className="contact-cta"
         >
-          <a href="https://cal.com/inferreach/30min" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <a href="https://calendly.com/hello-inferreach/30-minute-audit-call" target="_blank" rel="noopener noreferrer" className="btn-primary">
             Book My Free Audit →
           </a>
         </motion.div>
