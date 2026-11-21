@@ -1217,3 +1217,78 @@ footer {
     grid-column: 1 / -1;
   }
 }
+
+/* ============================================
+   HEADER FIX (mobile)
+============================================ */
+@media (max-width: 600px) {
+  .header-inner {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .mobile-cta {
+    width: auto;
+    min-height: 40px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================
+   HERO MOBILE FIX
+============================================ */
+.activity-feed {
+  height: auto;
+  min-height: 44px;
+}
+
+.activity-item {
+  white-space: normal;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .activity-item {
+    font-size: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .activity-item svg {
+    margin-top: 2px;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+}
+/* ============================================
+   HERO SINGLE COLUMN (mobile)
+============================================ */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

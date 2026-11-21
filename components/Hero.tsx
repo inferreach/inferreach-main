@@ -56,15 +56,13 @@ export default function Hero() {
           >
             Managed Outbound & GTM Infrastructure
           </motion.span>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Managed Outbound Pods & <br className="hidden md:block" />
-            GTM Data Engineering <br className="hidden md:block" />
-            for B2B SaaS.
+            Managed Outbound Pods & GTM Data Engineering for B2B SaaS.
           </motion.h1>
           
           <motion.p
