@@ -1117,3 +1117,103 @@ footer {
   .mobile-cta { display: inline-block; padding: 6px 16px; font-size: 0.85rem; }
   .logo-text { font-size: 1.1rem; }
 }
+
+/* ============================================
+   INTEGRATIONS (Powered By)
+============================================ */
+.integrations-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  margin-top: -40px;
+}
+
+.integrations-heading {
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #71717a;
+  margin-bottom: 40px;
+}
+
+.integrations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 48px 64px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.brand-logo {
+  color: #a1a1aa;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+}
+
+.brand-svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.brand-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.brand-logo:hover {
+  transform: translateY(-2px);
+}
+
+/* Brand colors on hover */
+.brand-logo.hubspot:hover { color: #ff7a59; }
+.brand-logo.slack:hover { color: #e01e5a; }
+.brand-logo.clickup:hover { color: #7b68ee; }
+.brand-logo.claude:hover { color: #d97757; }
+.brand-logo.deepseek:hover { color: #4d6bfe; }
+.brand-logo.openai:hover { color: #10a37f; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .integrations-section {
+    padding: 40px 0;
+    margin-top: 0;
+  }
+
+  .integrations-grid {
+    gap: 32px 40px;
+  }
+
+  .brand-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .integrations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+  }
+
+  .brand-logo:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
