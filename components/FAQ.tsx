@@ -8,8 +8,16 @@ export default function FAQ() {
       a: 'Because we offer everything from one-off Lead Generation Sprints to ongoing GTM Data Engineering and Outsourced SDR retainers, pricing depends entirely on the scope of your project. Book a free discovery call and we will send over a custom proposal based on your exact needs.'
     },
     {
+      q: 'Do you work on a commission basis?',
+      a: 'No. We charge flat, transparent fees for our data engineering and managed outbound services. We do not take a percentage of closed deals or work on commission. Our focus is purely on building your data infrastructure and booking qualified meetings.'
+    },
+    {
+      q: 'Do we have to sign a long-term contract?',
+      a: 'No. The Lead Generation Sprint and Data Engineering setup are one-time projects with no long-term commitment. If you choose to move forward with the Outsourced SDR pod or a Data Retainer, we start with an initial paid pilot to ensure we are a good fit, and then transition to a month-to-month agreement.'
+    },
+    {
       q: 'What exactly is the Lead Generation Sprint?',
-      a: 'It is a fixed-scope, 1-week project designed for teams testing a new market. We build a highly targeted prospect list of 500 to 1,000 verified leads based on your specific ICP, geography, and tech stack signals. You get Company Name, Website, Decision-Maker Name, Title, Verified Business Email, and LinkedIn URL.'
+      a: 'It is a fixed-scope, 2-week pilot designed for teams testing a new market. We build a highly targeted prospect list of 500 to 1,000 verified leads based on your specific ICP, geography, and tech stack signals. You get Company Name, Website, Decision-Maker Name, Title, Verified Business Email, and LinkedIn URL.'
     },
     {
       q: 'How does the Outsourced SDR/BDR Pod work?',
@@ -17,15 +25,11 @@ export default function FAQ() {
     },
     {
       q: 'How do you send outbound emails without ruining our domain reputation?',
-      a: 'We never send cold emails from your primary domain (e.g., yourcompany.com). We purchase secondary lookalike domains (e.g., yourcompany.co or getyourcompany.io), set up the proper DNS records, warm them up over 2-3 weeks, and manage the entire infrastructure for you.'
-    },
-    {
-      q: 'Do we have to sign a long-term contract?',
-      a: 'No. The Lead Generation Sprint and Data Engineering setup are one-time projects with no long-term commitment. If you choose to move forward with the Outsourced SDR pod or a Data Retainer, we work on a month-to-month basis after a 30-day initial trial period to ensure we are a good fit.'
+      a: 'We never send cold emails from your primary domain. We purchase secondary lookalike domains, set up the proper DNS records, warm them up over 2-3 weeks, and manage the entire infrastructure for you to ensure maximum deliverability.'
     },
     {
       q: 'How long until we see results?',
-      a: 'Lead Generation Sprints take exactly 5 business days from project kickoff. CRM cleanup and Data Engineering implementation range from 1–3 weeks. If you choose the outsourced SDR pod, we typically start booking meetings within 2-3 weeks of the initial setup (as we need time to warm up the email domains).'
+      a: 'Lead Generation Sprints take exactly 2 weeks from project kickoff. CRM cleanup and Data Engineering implementation range from 1–3 weeks. If you choose the outsourced SDR pod, we typically start booking meetings within 2-3 weeks of the initial setup (as we need time to warm up the email domains).'
     },
     {
       q: 'Do you work with our existing tools?',
